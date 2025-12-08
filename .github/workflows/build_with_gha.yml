@@ -1,6 +1,9 @@
 name: Build with GHA
 
 on:
+    push:
+         branches:
+          - main 	
     workflow_dispatch:
 env:
     artifact_version: 1.0.0
