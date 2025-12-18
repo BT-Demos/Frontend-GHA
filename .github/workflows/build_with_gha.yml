@@ -6,7 +6,7 @@ on:
           - main 	
     workflow_dispatch:
 env:
-    artifact_version: 9.0.0
+    artifact_version: 12.25
 permissions:
       id-token: write
       contents: read
