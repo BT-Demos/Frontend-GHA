@@ -4,8 +4,8 @@
       "name": "gotest"
     },
     "summary": {
-      "tests": 13,
-      "passed": 8,
+      "tests": 14,
+      "passed": 9,
       "failed": 4,
       "pending": 0,
       "skipped": 1,
@@ -91,6 +91,12 @@
         "status": "failed",
         "duration": 0.1,
         "suite": "Test Suite2"
+      }
+      {
+        "name": "TestHealthCheck",
+        "status": "passed",
+        "duration": 0.05,
+        "suite": "Test Suite3"
       }
     ]
   }
