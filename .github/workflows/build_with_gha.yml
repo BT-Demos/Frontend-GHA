@@ -69,3 +69,7 @@ jobs:
             Test 1 | PASS |
             Test 2 | FAIL |
             Test 3 | PASS |
+
+      - name: Gitleaks scan
+        uses: cloudbees-io-gha/gitleaks-scan-publish@v1
+        
