@@ -6,7 +6,7 @@ on:
           - main 	
     workflow_dispatch:
 env:
-    artifact_version: 7.0.2
+    artifact_version: 8.0.0
 permissions:
       id-token: write
       contents: read
@@ -17,6 +17,9 @@ jobs:
     steps:
       - name: Compile Code
         run: echo "Compiling...."
+
+      - name: Add Health Check Feature
+        run: echo "Integration health check endpoint calls to backend ..."
 
       - name: Produce Binary
         run: sleep 5
@@ -37,7 +40,7 @@ jobs:
         uses: cloudbees-io-gha/publish-evidence-item@v2
         with:
           content: |-
-            Build Completed and artifacts published to Cloudbees platform
+            Build completed and artifacts published to CloudBees platform
 
   test:
     runs-on: ubuntu-latest
@@ -60,7 +63,7 @@ jobs:
         uses: cloudbees-io-gha/publish-evidence-item@v2
         with:
           content: |-
-            Testing Completed and results published to Cloudbees platform
+            Testing completed and results published to CloudBees platform
             Test | Results |
             --------|---------|
             Test 1 | PASS |
